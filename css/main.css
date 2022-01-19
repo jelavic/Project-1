@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@200;300;400;500;600;700;800&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+  font-family: "K2D", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #106c8a;
+}
+
+a:hover, a:focus {
+  color: #4ac2e9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 70%;
+  background: #0B485C;
+  opacity: 0.4;
+  margin: 1rem auto;
+}
+
+.section-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-container p {
+  color: #ffffff;
+  margin-top: .8rem;
+  padding: .2em 0;
+}
+
+.section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 10%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+          box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  border-radius: 0.5em;
+  padding: 5em 5em;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-container .form-field {
+  padding: .6em 0;
+  color: #ffffff;
+  letter-spacing: 1.2px;
+}
+
+.form-container input {
+  text-align: center;
+  margin-top: .3rem;
+  border: none;
+  border-radius: .4em;
+  max-width: 80%;
+  outline: none;
+}
+
+.form-container input:focus, .form-container input:hover {
+  border: none;
+  outline: 2px solid #106c8a;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px auto;
+  min-width: 400px;
+  -webkit-box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+          box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #0B485C;
+  color: #ffffff;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #0B485C;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #0B485C;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0.5em;
+  -webkit-transition: all linear 200ms;
+  transition: all linear 200ms;
+  cursor: pointer;
+  font-size: 0.8rem;
+  letter-spacing: 1.2px;
+  margin-top: 2em;
+}
+
+.btn--primary {
+  background: #0B485C;
+  color: #ffffff;
+  font-weight: 700;
+  border: 2px solid #0B485C;
+}
+
+.btn--primary:hover, .btn--primary:focus {
+  background: #106c8a;
+  border-color: #106c8a;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  margin-top: 0;
+}
+/*# sourceMappingURL=main.css.map */

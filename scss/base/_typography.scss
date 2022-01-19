@@ -1,0 +1,43 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+
+
+h1 {
+  font-size: 2rem;
+  font-weight: $font-bolder;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 70%;
+    background: $primary;
+    opacity: 0.4;
+    margin: 1rem auto;
+  }
+}
+
+.section-title{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.section-container{
+  p{
+    color: $white;
+    margin-top: .8rem;
+    padding: .2em 0;
+  }
+}

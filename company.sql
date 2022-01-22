@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 19, 2022 at 10:12 PM
+-- Generation Time: Jan 22, 2022 at 05:57 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 7.4.22
 
@@ -32,6 +32,20 @@ CREATE TABLE `department` (
   `departmentName` varchar(20) NOT NULL,
   `departmentLocation` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `department`
+--
+
+INSERT INTO `department` (`departmentNo`, `departmentName`, `departmentLocation`) VALUES
+(1, 'Development', 'London'),
+(2, 'Development', 'Zurich'),
+(3, 'Development', 'Osijek'),
+(4, 'Sales', 'London'),
+(5, 'Sales', 'Zurich'),
+(6, 'Sales', 'Osijek'),
+(7, 'Sales', 'Basel'),
+(8, 'Sales', 'Lugano');
 
 -- --------------------------------------------------------
 
@@ -65,7 +79,7 @@ CREATE TABLE `login` (
 
 INSERT INTO `login` (`loginNo`, `loginUserName`, `loginPassword`) VALUES
 (1, 'Bill', 'ItsNotSoft'),
-(23, 'Jean', 'trollsRule');
+(2, 'Jean', 'trollsRule');
 
 --
 -- Indexes for dumped tables
@@ -98,19 +112,19 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT for table `department`
 --
 ALTER TABLE `department`
-  MODIFY `departmentNo` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `departmentNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `employee`
 --
 ALTER TABLE `employee`
-  MODIFY `employeeNo` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `employeeNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
-  MODIFY `loginNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `loginNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- Constraints for dumped tables

@@ -8,16 +8,19 @@
 }
 
 body {
-  text-align: center; 
+  text-align: center;
   font-family: $font-stack;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
 }
 
 a{
   text-decoration: none;
-  color: $primary-lighten-10;
+  color: white;
 
-  &:hover,
-  &:focus{
-    color: $primary-lighten-40;
-  }
 }

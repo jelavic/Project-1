@@ -1,7 +1,7 @@
 
 $primary: #0B485C;
 $secondary: #00c9b7;
-$accent: #d2bbe6;
+$accent: #E84747;
 
 $white: #ffffff;
 $dark: #333;
@@ -14,8 +14,8 @@ $transparent-light: rgba(0, 0, 0, 0.5);
 $primary-darken: darken($primary, 15%);
 $primary-lighten-10: lighten($primary, 10%);
 $primary-lighten-40: lighten($primary, 40%);
-$hover-accent-10: darken($accent, 10%);
-$hover-accent-20: darken($accent, 20%);
+$accent-lighten-10: lighten($accent, 10%);
+$accent-darken-10: darken($accent, 10%);
 
 
 // Shadows

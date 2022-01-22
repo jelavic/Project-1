@@ -1,4 +1,5 @@
-<?php include('server.php') ?>
+<?php include('server.php') 
+?>
 
 
 
@@ -12,19 +13,20 @@
 
     <link rel="stylesheet" href="css/main.css">
 
-    <title>Login</title>
+    <title>Register</title>
 </head>
 
 
 <body>
 
 <section>
-
     <div class="section-container">
-            <h1 class="section-title">Login</h1>
+            <h1 class="section-title">Add new user</h1>
             
             <div class="form-container">
-                    <form action="login.php" method="post">
+                    <form action="addNewUser.php" method="post">
+
+
                         <div class="form-field">
                             <label for="username" class="label-name"><span class="content-name">Username:</span></label>
                             <input type="text" name="username" required>                          
@@ -32,19 +34,25 @@
         
                         <div class="form-field">
                             <label for="password" class="label-name"><span class="content-name">Password:</span></label>
-                            <input type="password" name="password" id="password" required>
+                            <input type="password" name="password" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="password" class="label-name"><span class="content-name">Confirm password:</span></label>
+                            <input type="password" name="password_2" required>
                         </div>
         
                 
-                        <div class="buttonContainer">
-                        <button class="btn btn--primary" type="submit"  name=login>Log in</button>
-                        <p>Not a user? <strong><a href="register.php">Register</a></strong></p>
+                        <div class="button-container">
+                            <button class="btn btn--primary" type="submit" name=register >Submit</button>
+                            <button class="btn btn--primary" type="reset" name=reset >Reset</button>
                         </div>
                     </form>
+                    
                 </div> 
                 
             </div>
             </div>
-        </section> <!--  END login Section -->
+        </section>
 </body>
 </html>

@@ -1,14 +1,24 @@
+.table-container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+    justify-items: center;
+    align-items: center;
+    padding: 1em;
+}
+
 .styled-table {
     border-collapse: collapse;
     margin: 25px auto;
-    min-width: 400px;
+    width: 100%;
     box-shadow: $box-shadow;
-    
 }
 
 .styled-table thead tr {
     background-color: $primary;
     color: $white;
+    
+
 }
 
 .styled-table th,

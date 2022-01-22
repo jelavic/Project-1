@@ -10,9 +10,3 @@ $font-bold: 500;
 $font-bolder: 700;
 $font-black: 800;
 
-// Font mixin
-
-@mixin font($weight) {
-  font-family: $font-stack;
-  font-weight: $weight;
-}

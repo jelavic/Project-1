@@ -24,7 +24,7 @@
             <h1 class="section-title">Register</h1>
             
             <div class="form-container">
-                    <form action="registration.php" method="post">
+                    <form action="register.php" method="post">
 
 
                         <div class="form-field">
@@ -45,13 +45,15 @@
                 
                         <div class="button-container">
                             <button class="btn btn--primary" type="submit" name=register >Submit</button>
+                            <button class="btn btn--primary" type="reset" name=reset >Reset</button>
                             <p>Already a user? <strong><a href="login.php">Log in</a></strong></p>
                         </div>
                     </form>
+                    
                 </div> 
                 
             </div>
             </div>
-        </section> <!--  END login Section -->
+        </section> <!--  END register Section -->
 </body>
 </html>

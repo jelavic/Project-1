@@ -1,6 +1,6 @@
 .btn {
   display: inline-block;
-  padding: 0.6em 1.5em;
+  padding: 0.6em 1em;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 0.5em;
@@ -8,23 +8,34 @@
   cursor: pointer;
   font-size: 0.8rem;
   letter-spacing: 1.2px;
-  margin-top: 2em;
+  color: $white !important;
+  font-weight: $font-bolder;
 }
 
 .btn--primary {
-  background: $primary;
-  color: $white;
-  font-weight: $font-bolder;
+  background-color: $primary;
   border: 2px solid $primary;
 
   &:hover,
   &:focus {
-    background: $primary-lighten-10;
+    background-color: $primary-lighten-10;
     border-color: $primary-lighten-10;
     color: $white;
   }
 }
 
-.btn-secondary{
-  margin-top: 0;
+.btn--secondary{
+  background-color: $accent;
+  border: 2px solid $accent;
+  color: $white;
+  font-weight: $font-bolder;
+  
+  &:hover,
+  &:focus {
+    background-color: $accent-darken-10;
+    border-color: $accent-darken-10;
+  
+  }
 }
+
+

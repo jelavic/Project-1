@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 22, 2022 at 05:57 PM
+-- Generation Time: Jan 25, 2022 at 11:21 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 7.4.22
 
@@ -61,6 +61,14 @@ CREATE TABLE `employee` (
   `lastModifyDate` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `employee`
+--
+
+INSERT INTO `employee` (`employeeNo`, `employeeName`, `salary`, `departmentNo`, `lastModifyDate`) VALUES
+(1, 'Fred Davies', 50000, 4, '2022-01-25 22:39:03'),
+(2, 'Bernard Katic', 50000, 3, '2022-01-25 22:46:27');
+
 -- --------------------------------------------------------
 
 --
@@ -112,19 +120,19 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT for table `department`
 --
 ALTER TABLE `department`
-  MODIFY `departmentNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `departmentNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `employee`
 --
 ALTER TABLE `employee`
-  MODIFY `employeeNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `employeeNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
-  MODIFY `loginNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `loginNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- Constraints for dumped tables

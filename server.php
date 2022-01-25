@@ -123,11 +123,15 @@ if(isset($_POST['submit'])){
 
 //new employee
 
-if(isset($_POST['add'])){
+if(isset($_POST['newEmployee'])){
+    $id = '';
     $name = $_POST['name'];
     $salary = $_POST['salary'];
+    $departmentNo = '';
+    $lastModifyDate = '';
 
-    $sql = "INSERT INTO `employee` (employeeName, salary) VALUES ('$name', '$salary')";
+
+    $sql = "INSERT INTO `employee`(employeeNo, employeeName, salary, departmentNo, lastModifyDate) VALUES ($id, '$name','$salary', '$departmentNo', '$lastModifyDate')";
 
     $result = mysqli_query($conn, $sql);
 
@@ -136,7 +140,7 @@ if(isset($_POST['add'])){
         header('location: employee.php');
     }
     else{
-        echo "<script>alert('Fail employee')</script>";
+        echo "<script>alert('ZAŠTO?')</script>";
         //  header('location: login.php');
     }
 }

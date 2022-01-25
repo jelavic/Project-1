@@ -1,18 +1,19 @@
 <?php include('header.php'); ?>
 
 
-
 <section class="table-container">
-    <h1>Employee</h1>
+    <h1>Employees</h1>
 
     <div>
     <table class="styled-table">
     <thead>
         <tr>
-            <th>employeeNo</th>
+            <th>employeNo</th>
             <th>employeeName</th>
             <th>salary</th>
             <th>departmentNo</th>
+            <th>lastModifyDate</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -28,19 +29,18 @@
             $name = $row['employeeName'];
             $salary = $row['salary'];
             $departmentNo = $row['departmentNo'];
-            $date = $row['lastModifyDate'];
+            $lastModifyDate = $row['lastModifyDate'];
+
 
             echo ' <tr>
             <th scope=row>'.$id.'</th>
             <td>'.$name.'</td>
             <td>'.$salary.'</td>
             <td>'.$departmentNo.'</td>
-            <td>'.$date.'</td>
-            <td>'.$departmentNo.'</td>
-            <td>'.$date.'</td>
+            <td>'.$lastModifyDate.'</td>
             <td>
-            <button class="btn btn--primary" type="submit" name="update"><a href="update.php?updateemp='.$id.'">UPDATE</a></button>
-            <button class="btn btn--secondary" type="submit" name="delete"><a href="delete.php?deleteemp='.$id.'">DELETE</a></button>
+            <button class="btn btn--primary" type="submit" name="update"><a href="edit-employee.php?updateid='.$id.'">Edit</a></button>
+            <button class="btn btn--secondary" type="submit" name="delete"><a href="delete.php?deletedeemp='.$id.'">DELETE</a></button>
             </td>
             
         </tr>';

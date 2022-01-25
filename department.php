@@ -11,7 +11,7 @@
             <th>departmentNo</th>
             <th>departmentName</th>
             <th>departmentLocation</th>
-            <th>Operation</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -32,7 +32,7 @@
             <td>'.$name.'</td>
             <td>'.$location.'</td>
             <td>
-            <button class="btn btn--primary" type="submit" name="update"><a href="update.php?updatedep='.$id.'">UPDATE</a></button>
+            <button class="btn btn--primary" type="submit" name="update"><a href="edit-department.php?updateid='.$id.'">Edit</a></button>
             <button class="btn btn--secondary" type="submit" name="delete"><a href="delete.php?deletedep='.$id.'">DELETE</a></button>
             </td>
             

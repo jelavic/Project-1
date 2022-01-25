@@ -15,6 +15,7 @@ if(isset($_GET['deleteid'])){
     }else{
         die(mysqli_error($conn));
     }
+
 }   
 
 
@@ -35,10 +36,11 @@ if(isset($_GET['deletedep'])){
 }
 
 
+
 //delete employee
 
-if(isset($_GET['deleteemp'])){
-    $id = $_GET['deleteemp'];
+if(isset($_GET['deletedeemp'])){
+    $id = $_GET['deletedeemp'];
 
     $sql = "DELETE FROM `employee` WHERE employeeNo=$id";
     $result = mysqli_query($conn, $sql);

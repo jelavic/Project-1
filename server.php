@@ -57,19 +57,20 @@ if(isset($_POST['register'])){
 
 
 //login
-if(isset($_POST['login'])){
+if(isset($_POST['username'])){
     $username= $_POST['username'];
     $password= $_POST['password'];
 
-    $sql = "SELECT * FROM `login` WHERE loginUserName='$username' AND loginPassword='$password'";
+    $sql = "SELECT * FROM `login` WHERE loginUserName='".$username."' AND loginPassword='".$password."' limit 1";
 
     $result = mysqli_query($conn, $sql);
 
-    if($result){
-        //echo "Login successfull";
+    if(mysqli_num_rows($result)==1){
+        echo "<script>alert('Login successfull!')</script>";
         header('location: users.php');
+        
     }else{
-        echo "<script>alert('user doesn't exist!')</script>";
+        echo "<script>alert('Wrong username or password!')</script>";
         //header('location: login.php');
 
         die(mysqli_error($conn));
